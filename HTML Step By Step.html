@@ -3,29 +3,98 @@
     <head>
         <title>HTML Step By Step</title>
     </head>
-    <body>
-        <h1>Hi There</h1>
-        <p>
-            Welcome to my website.
-            <br>This is a site that documented my journey on HTML learning.
-            <br>I started by watching a video on youtube that teaches how to build your first website.
+
+    <body class="content">
+        <style>
+          body{
+            background-image: linear-gradient(to bottom, #dfebde, rgba(0,0,0,0) 80%);
+            background-repeat: no-repeat;
+            margin:auto;
+            padding-left:20%;
+            padding-right:20%;
+            padding-top: 5%;
+          }
+
+          .head{
+            font-size: 40px;
+            font-family: "Arial";
+          }
+
+          .keeb{
+            font-size: 22px;
+            color:rgba(0,0,0,0.5);
+            font-family:"Arial";
+          }
+
+          hr.separator1{
+            height: 0.3px;
+            background-color: black;
+            border-color: black;
+          }
+
+          .intro{
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+
+          .htmlytblink{
+            background-color: #dfebde;
+            width: 320px;
+            height: 36px;
+            border-width: 0;
+            cursor: pointer;
+            font-size: 16px;
+            color:black;
+            border-radius: 5px;
+            transition: background-color 0.5s, box-shadow 0.3s;
+          }
+
+          .htmlytblink:hover {
+            background-color:#adc4ab96;
+            box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+          }
+
+          .ytbvideo1{
+          }
+
+          .p1{
+          }
+
+          .bulletpoints{
+          }
+        </style>
+
+
+
+
+                
+        <h1 class = "head">Learning HTML Step By Step</h1>
+
+        <h3 class = "keeb"> A recording of my journing through frontend development.</h3>
+
+        <hr class="separator1">
+
+        <p class="intro">
+          This is a site that documented my journey on HTML learning. I started by watching a video on youtube that teaches how to build your first website.
         </p>
 
-        <a href = "https://www.youtube.com/watch?v=z3lDQRdeUBw">Learn to Code and Build Your First Website</a>
+        <a href = "https://www.youtube.com/watch?v=z3lDQRdeUBw">
+          <button class = 'htmlytblink'>Learn to Code and Build Your First Website</button>
+        </a>
         
         <br>
-        <br><iframe width="560" height="315" src="https://www.youtube.com/embed/z3lDQRdeUBw?si=oqw8WU_fD7bR-Nfu&amp;start=30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <br><iframe class="ytbvideo1" width="560" height="315" src="https://www.youtube.com/embed/z3lDQRdeUBw?si=oqw8WU_fD7bR-Nfu&amp;start=30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         
-        <p>
-            I have made some notes as drafted bullet points below.
+        <p class="p1">
+          I have made some notes as drafted bullet points below.
         <p>
         
         <!--
             This section includes different parts of some basic HTML knowledges that I picked up
         -->
-        <ol>
-            <li><a href = "how browsers work.html">How does a browser takes you to a webpage?</a></li>
-            <li><a href = "how a webpage is presented.html">How are webpage built? What coding languages are used to build a webpage?</a></li>      
+        <ol class="bulletpoints">
+          <li><a href = "how browsers work.html">How does a browser takes you to a webpage?</a></li>
+          <li><a href = "how a webpage is presented.html">How are webpage built? What coding languages are used to build a webpage?</a></li>      
         </ol>
     </body>
 </html>
